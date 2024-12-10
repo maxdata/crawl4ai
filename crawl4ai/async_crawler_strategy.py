@@ -60,7 +60,6 @@ class ManagedBrowser:
             self.user_data_dir = self.temp_dir
 
         # Get browser path and args based on OS and browser type
-        browser_path = self._get_browser_path()
         args = self._get_browser_args()
 
         # Start browser process

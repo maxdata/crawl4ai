@@ -1,7 +1,6 @@
 import os
 import time
 import warnings
-from enum import Enum
 from colorama import init, Fore, Back, Style
 from pathlib import Path
 from typing import Optional, List, Union
@@ -20,13 +19,11 @@ from .async_logger import AsyncLogger
 
 from .config import (
     MIN_WORD_THRESHOLD, 
-    IMAGE_DESCRIPTION_MIN_WORD_THRESHOLD,
-    URL_LOG_SHORTEN_LENGTH
+    IMAGE_DESCRIPTION_MIN_WORD_THRESHOLD
 )
 from .utils import (
     sanitize_input_encode,
     InvalidCSSSelectorError,
-    format_html,
     fast_format_html,
     create_box_message
 )
