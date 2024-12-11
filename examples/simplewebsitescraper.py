@@ -83,6 +83,6 @@ async def main(start_url: str, depth: int):
         print(f"- {url}: {len(result.links.get('internal', []))} internal links, {len(result.links.get('external', []))} external links")
 
 if __name__ == "__main__":
-    start_url = "https://workhere.org"
+    start_url = "https://www.workhere.org"
     depth = 2
     asyncio.run(main(start_url, depth))    
